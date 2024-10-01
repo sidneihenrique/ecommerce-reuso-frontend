@@ -1,6 +1,9 @@
 .results{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    padding: 16px 0;
 
 }
 
@@ -12,6 +15,8 @@
     border-radius: 6px;
 
     border: 1px solid var(--light);
+
+    overflow: hidden;
 }
 
 .card > img{
@@ -23,14 +28,29 @@
     padding: 0 8px;
 }
 
+.card .informations *{
+    width: 100%;
+    display: flex;
+}
+
 .card .title{
     font-weight: 700;
     max-height: 48px;
     
 }
 
+.card .description{
+    font-weight: 400;
+    max-height: 56px;
+    font-size: 13px;
+    
+}
+
 .card a{
-    width: 100%;
     text-align: center;
     text-decoration: none;
+    justify-content: center;
+
+    padding: 8px 0;
+
 }
