@@ -1,0 +1,36 @@
+.results{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    border-radius: 6px;
+
+    border: 1px solid var(--light);
+}
+
+.card > img{
+    width: 100%;
+    height: 88px;
+}
+
+.card .informations{
+    padding: 0 8px;
+}
+
+.card .title{
+    font-weight: 700;
+    max-height: 48px;
+    
+}
+
+.card a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
