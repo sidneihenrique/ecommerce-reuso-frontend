@@ -69,8 +69,23 @@ a{
 .input-wrapper select,
 input{
     border-radius: 9999px;
+    width: 100%;
     height: 40px;
     padding: 16px;
 
+    background: none;
+
     border: 2px solid var(--black);
+}
+
+.input-wrapper select option{
+    color: var(--black);
+
+    padding: 0;
+    
+}
+
+.input-wrapper select{
+    padding: 0 16px;
+    font-weight: 600;
 }

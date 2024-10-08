@@ -15,11 +15,54 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 <body>
 
+    <div class="modal show" id="modal">
+        <form  method="post" class="card-modal">
+            <button onclick="modal()" class="close"><ion-icon name="close"></ion-icon></button>
+            
+            <div class="input-wrapper">
+                <label for="order_price">Ordenar por:</label>
+                <select name="order_price" id="order_price">
+                    <option value="menor_preco" selected>Menor preço</option>
+                    <option value="maior_preco">Maior preço</option>
+                </select>
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="order_date">Data da publicação:</label>
+                <select name="order_date" id="order_date">
+                    <option value="menor_preco" selected>Menor preço</option>
+                    <option value="maior_preco">Maior preço</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="input-wrapper">
+                    <label for="valor_minimo">Valor mínimo</label>
+                    <input type="text" name="valor_minimo" id="valor_minimo" placeholder="Ex: R$ 49,90">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="valor_minimo">Valor mínimo</label>
+                    <input type="text" name="valor_minimo" id="valor_minimo" placeholder="Ex: R$ 49,90">
+                </div>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="data_publicacao">Data do evento</label>
+                <input type="date" name="data_publicacao" id="data_publicacao">
+            </div>
+
+            <button type="submit">Filtrar</button>
+        </form>
+        <div class="bg-blur" onclick="modal();"></div>
+    </div>
+
     <header>
-        <button onclick="">
+        <button onclick="modal();">
             <ion-icon name="filter-sharp"></ion-icon>
         </button>
 
@@ -83,5 +126,8 @@
     <script>
         lucide.createIcons();
     </script>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
