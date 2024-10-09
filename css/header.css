@@ -31,3 +31,21 @@ header button.active{
 header button.active ion-icon{
     color: var(--white);
 }
+
+header .left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header .left h2{
+    font-size: 14px;
+}
+
+header button.blue{
+    background: var(--blue);
+}
+
+header button.blue ion-icon{
+    color: var(--white);
+}
