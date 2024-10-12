@@ -3,11 +3,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 
-    padding: 16px 0;
-
 }
 
 .card{
+    background: var(--light);
+
     display: flex;
     flex-direction: column;
     gap: 4px;

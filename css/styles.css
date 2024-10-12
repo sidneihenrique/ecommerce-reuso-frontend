@@ -89,3 +89,22 @@ input{
     padding: 0 16px;
     font-weight: 600;
 }
+
+.input-wrapper textarea{
+    border: 2px solid var(--black);
+
+    padding: 8px 12px 32px;
+
+    border-radius: 8px;
+}
+
+form{
+    max-height: 82vh;
+    overflow-y: scroll;
+
+    padding-bottom: 24px;
+}
+
+.results{
+    padding: 16px 0;
+}

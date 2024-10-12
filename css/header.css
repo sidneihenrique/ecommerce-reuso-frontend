@@ -42,6 +42,16 @@ header .left h2{
     font-size: 14px;
 }
 
+header p{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+header .right{
+    display: flex;
+    gap: 8px;
+}
+
 header button.blue{
     background: var(--blue);
 }
