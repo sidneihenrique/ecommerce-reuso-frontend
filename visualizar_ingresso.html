@@ -63,10 +63,47 @@
     </header>
 
     <main>
-        <a onclick="modal()">
+        <a onclick="modal()" id="denunciar_anuncio">
             <ion-icon name="alert-circle-outline" style="font-size: 32px;"></ion-icon>
             Denunciar anúncio
         </a>
+
+        <img src="./assets/produto_imagem.png" alt="" id="imagem_anuncio">
+
+        <div class="informations">
+            <h4>Brasil x Equador</h4>
+            
+            <div class="row">
+                <ion-icon name="calendar-sharp"></ion-icon>
+                <p>06/09/2024</p>
+            </div>
+            
+            <div class="row">
+                <ion-icon name="time-sharp"></ion-icon>
+                <p>21:45</p>
+            </div>
+
+            <div class="row" style="margin-top: 12px;">
+                <div class="user-picture">
+                    <img src="./assets/produto_imagem.png" alt="Imagem Usuário">
+                </div>
+                <p style="font-weight: 600;">Gabriel Felipe Jess Meira</p>
+            </div>
+        </div>
+
+        <form>
+            <div class="input-wrapper">
+                <label for="quantity">Quantidade de ingressos</label>
+                <select name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+            <h3 id="valor_total">R$ 148,90</h3>
+
+            <button type="submit">Adicionar ao carrinho</button>
+        </form>
     </main>
 
 <!-- 
