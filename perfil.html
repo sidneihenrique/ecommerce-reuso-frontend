@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/perfil.css">
+
+</head>
+<body>
+
+    <div class="modal" id="modal">
+        <form  method="post" class="card-modal">
+
+            <div class="row">
+                <div class="left">
+                    <ion-icon name="person" style="font-size: 32px;"></ion-icon>
+                    <h4>Editar perfil</h4>
+                </div>
+
+                <button onclick="modal()" class="close" type="button"><ion-icon name="close"></ion-icon></button>
+            </div>
+
+            
+            <div class="input-wrapper">
+                <label for="nome_usuario">Nome do usuário</label>
+                <input type="text" name="nome_usuario" id="nome_usuario">
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="email_usuario">E-mail</label>
+                <input type="email" name="email_usuario" id="email_usuario">
+            </div>
+            
+            <div class="input-wrapper">
+                <label for="data_nascimento_usuario"></label>
+                <input type="email" name="data_nascimento_usuario" id="data_nascimento_usuario">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="observacao">Observação</label>
+                <textarea type="text" name="observacao" id="observacao" placeholder="Ex: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget ligula aliquet, iaculis est eu, ornare velit. Cras vestibulum venenatis blandit."></textarea>
+            </div>
+            
+            <button type="submit">Enviar denúncia</button>
+        </form>
+        <div class="bg-blur" onclick="modal();"></div>
+    </div>
+
+    <header>
+        <div class="left">
+            <button onclick="history.back();">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <div>
+                <h4>Perfil</h4>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="user_informations">
+            <div class="user_picture">
+                <img src="./assets/produto_imagem.png" alt="Imagem usuário">
+            </div>
+            <div class="informations">
+                <h4 class="nome_usuario">Tiago Paulin</h4>
+                <p>Data de nascimento: <span class="data_nascimento_usuario">11/12/2002</span></p>
+                <p class="telefone_usuario">(41) 9999-9999</p>
+            </div>
+            <button onclick="modal()">
+                <ion-icon name="pencil"></ion-icon>
+            </button>
+        </div>
+    
+        <button style="background-color: var(--red);">Excluir conta</button>
+    
+        <h4>Ingressos cadastrados</h4>
+    
+        <div class="results" id="ingressos_cadastrados">
+    
+            <div class="card product">
+                <img src="./assets/produto_imagem.png" alt="Imagem produto">
+                <div class="informations">
+                    <p class="title">Produto</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="./visualizar_ingresso.html">Ver mais</a>
+                </div>
+            </div>
+    
+            <div class="card product">
+                <img src="./assets/produto_imagem.png" alt="Imagem produto">
+                <div class="informations">
+                    <p class="title">Produto</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="./visualizar_ingresso.html">Ver mais</a>
+                </div>
+            </div>
+    
+            <div class="card product">
+                <img src="./assets/produto_imagem.png" alt="Imagem produto">
+                <div class="informations">
+                    <p class="title">Produto</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="./visualizar_ingresso.html">Ver mais</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </main>
+
+    
+    <nav>
+        <a href="./home.html" >
+            <i data-lucide="house"></i>
+        </a>
+        <a href="./ingressos.html">
+            <i data-lucide="ticket"></i>
+        </a>
+        <a href="./perfil.html" class="active">
+            <i data-lucide="user-round"></i>
+        </a>
+    </nav>
+
+
+    <!-- Ionic Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="./js/modal.js"></script>
+
+</body>
+</html>
